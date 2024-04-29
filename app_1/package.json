@@ -1,0 +1,11 @@
+{
+  "name": "app_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "live-server src --verbose --port=3000"
+  },
+  "keywords": [],
+  "author": "Sergey Stefanenko"
+}
