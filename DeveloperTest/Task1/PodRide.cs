@@ -1,13 +1,9 @@
-﻿namespace ClassLibrary
+﻿using Task1;
+
+namespace ClassLibrary
 {
-    public class PodRide
+    public class PodRide : Vehicle
     {
-        public string Model { get; init; }
-
-        public string Color { get; init; }
-
-        public int MaxSpeed { get; init; }
-
         public PodRide()
         {
             Model = "Model";

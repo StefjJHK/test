@@ -8,11 +8,11 @@ namespace Task2
         public IEnumerable<TEntity> GetInstances<TEntity>() where TEntity : class
         {
             var entityType = typeof(TEntity);
-            var type = typeof(Scan).Assembly
+            var types = typeof(Vehicle).Assembly
                 .GetTypes()
-                .First(x => x == entityType);
-
-            while (true)
+                .Where(x => x == entityType || entityType.IsAssignableFrom(x));
+            
+            foreach(var type in types)
             {
                 yield return Activator.CreateInstance(type) as TEntity;
             }

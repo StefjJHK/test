@@ -1,13 +1,9 @@
-﻿namespace ClassLibrary
+﻿using Task1;
+
+namespace ClassLibrary
 {
-    public class AnotherCar
+    public class AnotherCar : Vehicle
     {
-        public string Model { get; init; }
-
-        public string Color { get; init; }
-
-        public int MaxSpeed { get; init; }
-
         public AnotherCar()
         {
             Model = "Model";

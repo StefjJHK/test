@@ -2,8 +2,13 @@
 
 namespace ClassLibrary
 {
-    public class Bicycle
+    public class Bicycle : Vehicle
     {
-
+        public Bicycle()
+        {
+            Model = "Model";
+            Color = "Red";
+            MaxSpeed = 100;
+        }
     }
 }

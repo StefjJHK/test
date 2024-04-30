@@ -3,7 +3,7 @@ using Task1;
 
 # region point 1
 
-var typeNames = typeof(Scan).Assembly
+var typeNames = typeof(Vehicle).Assembly
     .GetTypes()
     .Select(x => x.Name)
     .Order()
@@ -17,7 +17,7 @@ Console.WriteLine(string.Join(" ", typeNames));
 
 List<Type> Search(string name)
 {
-    var types = typeof(Scan).Assembly
+    var types = typeof(Vehicle).Assembly
         .GetTypes()
         .Where(x => x.Name.Contains(name))
         .ToList();
